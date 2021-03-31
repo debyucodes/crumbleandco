@@ -1,0 +1,53 @@
+.hero {
+  background: url('../assets/katerina-smirnova-HZgyeP-xDBU-unsplash.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.branding {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 10%;
+    padding: 20px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+    a {
+      font-size: 25px;
+      color: black;
+      padding: 0 15px;
+    }
+  }
+}
+
+
+nav {
+  margin: 0 auto;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
