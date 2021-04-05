@@ -1,3 +1,4 @@
+// HERO IMAGE ON HOME PAGE
 .hero {
   background: url('../assets/katerina-smirnova-HZgyeP-xDBU-unsplash.jpg');
   background-size: cover;
@@ -14,6 +15,7 @@
   }
 }
 
+// TOP NAV BAR
 .branding {
   display: flex;
   justify-content: space-between;
@@ -40,6 +42,8 @@
 
 nav {
   margin: 0 auto;
+  background: $grey;
+  padding: 2px 0;
 
   ul {
     display: flex;
@@ -48,6 +52,6 @@ nav {
 
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
 }

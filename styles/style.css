@@ -292,6 +292,8 @@ html {
 
 nav {
   margin: 0 auto;
+  background: #3d3732;
+  padding: 2px 0;
 }
 
 nav ul {
@@ -305,7 +307,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .about {
@@ -367,6 +369,81 @@ nav a {
 
 .FAQ p {
   display: none;
+}
+
+.menu {
+  background: #FFEDEC;
+  margin: 5% auto;
+  width: 60%;
+  border: 5px solid #3d3732;
+  padding: 80px;
+}
+
+.contactForm {
+  background: #FFEDEC;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm div,
+.contactForm form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactForm ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+}
+
+.contactForm a {
+  font-size: 25px;
+  padding: 0 10px;
+  color: black;
+}
+
+.contactForm form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.contactForm form input,
+.contactForm form textarea {
+  background: #FFEDEC;
+  border: 0;
+  border-bottom: 2px solid #3d3732;
+  padding: 10px;
+}
+
+.contactForm form button {
+  font-size: 25px;
+  background: #3d3732;
+  color: white;
+  padding: 10px 30px;
+  border: 0;
 }
 
 footer {

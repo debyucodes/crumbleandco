@@ -1,7 +1,11 @@
 @import 'setup';
+@import 'variables';
 @import 'header';
 @import 'about';
+@import 'menu';
+@import 'forms';
 @import 'footer';
+
 
 body {
   background: rgba(0, 0, 0, 0);
@@ -53,7 +57,7 @@ img {
 
   a {
     text-decoration: none;
-    background: #96B9D0;
+    background: $blue;
     padding: 15px 50px;
     color: white;
     font-size: 30px;
@@ -79,19 +83,19 @@ img {
   }
 
   .teal {
-    background: #A2E1DB;
+    background: $teal;
   }
 
   .yellow {
-    background: #FFFFB5;
+    background: $yellow;
   }
 
   .blue {
-    background: #96B9D0;
+    background: $blue;
   }
 
   .pink {
-    background: #FFC5BF;
+    background: $pink;
   }
 }
 
