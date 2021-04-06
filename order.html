@@ -108,14 +108,23 @@
         <!-- food allergies -->
         <label for="" class="sr-only">Food Allergies</label>
         <input name="allergies" type="text" required placeholder="Any food allergies?*">
+        <!-- quantity -->
+        <label for="quantity">Quantity</label>
+        <select name="quantity" id="quantity">
+          <option value="" disabled selected hidden>Please Choose...</option>
+          <option value="single">Single - 1</option>
+          <option value="6">Half Dozen - 6</option>
+          <option value="12">Dozen - 12</option>
+          <option value="24">Two Dozens - 14</option>
+        </select>
         <!-- pick-up date -->
         <label for="">Pick-up date</label>
         <input type="date" name="date" required>
         <!-- details -->
         <textarea name="details" id="" cols="30" rows="10" placeholder="Please indicate any details about your order (e.g. wedding, birthday, theme, colour scheme, flavour)" required></textarea>
         <!-- pickup or delivery -->
-        <label for="cars">Delivery Method</label>
-        <select name="cars" id="cars">
+        <label for="delivery-method">Delivery Method</label>
+        <select name="delivery-method" id="cars">
           <option value="pickup">Pick-up</option>
           <option value="delivery">Delivery (free delivery within York Region)</option>
         </select>
