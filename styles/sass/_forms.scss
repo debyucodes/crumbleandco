@@ -71,7 +71,13 @@
       border: 2px solid $pink;
       text-decoration: 0;
       color: $grey;
+      transition: .3s ease;
+
+      &:hover {
+        background-color: white;
+      }
     }
+
 
     div {
       padding: 25px;

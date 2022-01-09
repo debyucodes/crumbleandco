@@ -11,7 +11,7 @@ app.init = () => {
 app.faq = () => {
   $('.question').click(function(){
     $(this).find('p').slideToggle(300);
-    $('i', this).toggleClass("fas fa-minus fas fa-plus");
+    $('.icon', this).toggleClass("fas fa-minus fas fa-plus");
   })
 }
 

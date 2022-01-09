@@ -236,7 +236,7 @@ html {
 }
 
 .hero {
-  background: url("../assets/katerina-smirnova-HZgyeP-xDBU-unsplash.jpg");
+  background: url("../assets/hero.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 90vh;
@@ -350,6 +350,14 @@ nav a {
   transition: 0.8s ease;
 }
 
+.about img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
 .about li:hover {
   border-left: 15px solid #A2E1DB;
 }
@@ -383,7 +391,7 @@ nav a {
   cursor: pointer;
 }
 
-.FAQ i {
+.FAQ h4 i {
   margin-right: 10px;
 }
 
@@ -493,6 +501,12 @@ nav a {
   -webkit-text-decoration: 0;
           text-decoration: 0;
   color: #3d3732;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.order ul a:hover {
+  background-color: white;
 }
 
 .order ul div {
@@ -630,7 +644,8 @@ img {
 }
 
 .flavour p {
-  margin-bottom: 50px;
+  margin: 50px 0;
+  text-align: center;
 }
 
 .flavour a {
