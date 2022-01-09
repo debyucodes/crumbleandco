@@ -46,16 +46,16 @@
         <li><a href="https://www.instagram.com/crumbleand.co/" target="_blank"><i class="fab fa-instagram"></i></a></li>
       </ul>
     </div>
-    <form action="">
+    <form action="https://formspree.io/f/mlezdyel" method="POST" onsubmit="this.submit(); this.reset(); return false;">
       <!-- name -->
       <label for="" class="sr-only">Name</label>
       <input name="name" type="text" required placeholder="name*">
       <!-- email -->
       <label for="" class="sr-only">Email</label>
-      <input name="email" type="email" required placeholder="email*">
+      <input name="_replyto" type="email" required placeholder="email*">
       <!-- phone -->
       <label for="" class="sr-only">Phone</label>
-      <input name="phone" type="text" placeholder="phone">
+      <input name="phone" type="text" placeholder="phone" pattern="^\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$">
       <!-- message -->
       <textarea name="message" id="" cols="30" rows="10" placeholder="write your message here..." required></textarea>
       <button type="submit" value="send">Submit</button>

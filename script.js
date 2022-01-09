@@ -15,6 +15,8 @@ app.faq = () => {
   })
 }
 
+// $(".form")[0].reset();
+
 // app.scroll = () => {
 //   $(document).on("scroll", function(){
 //     if

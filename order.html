@@ -88,23 +88,22 @@
           </div>
         </li>
       </ul>
-      <h3>Note: prices indicated above are per dozen order.</h3>
     </section>
 
     <section class="orderForm" id="order">
       <h1>Order Request Form</h1>
       <p>Looking to order custom cookies? Complete the form below to get a quote and we will be in touch within the next 24-48 hours!</p>
       <p>Before you submit an order request, please review our <a href="./menu.html">menu pricing</a>  and <a href="./about.html#faq">FAQ section</a>. Feel free to contact us <a href="./contact.html">here</a>  for any general inquiries!</p>
-      <form action="">
+      <form action="https://formspree.io/f/myyozqyd" method="POST" onsubmit="this.submit(); this.reset(); return false;">
         <!-- name -->
         <label for="" class="sr-only">Name</label>
         <input name="name" type="text" required placeholder="First and Last Name*">
         <!-- email -->
         <label for="" class="sr-only">Email</label>
-        <input name="email" type="email" required placeholder="Email*">
+        <input name="_replyto" type="email" required placeholder="Email*">
         <!-- phone -->
         <label for="" class="sr-only">Phone</label>
-        <input name="phone" type="text" required placeholder="Phone number*">
+        <input name="phone" type="text" required placeholder="Phone number*" pattern="^\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$">
         <!-- food allergies -->
         <label for="" class="sr-only">Food Allergies</label>
         <input name="allergies" type="text" required placeholder="Any food allergies?*">
@@ -112,10 +111,11 @@
         <label for="quantity">Quantity</label>
         <select name="quantity" id="quantity">
           <option value="" disabled selected hidden>Please Choose...</option>
-          <option value="single">Single - 1</option>
+          <option value="1">Single - 1</option>
           <option value="6">Half Dozen - 6</option>
           <option value="12">Dozen - 12</option>
-          <option value="24">Two Dozens - 14</option>
+          <option value="24">Two Dozens - 24</option>
+          <option value="other">Other - please specify below.</option>
         </select>
         <!-- pick-up date -->
         <label for="">Pick-up date</label>
@@ -126,7 +126,7 @@
         <label for="delivery-method">Delivery Method</label>
         <select name="delivery-method" id="cars">
           <option value="pickup">Pick-up</option>
-          <option value="delivery">Delivery (free delivery within York Region)</option>
+          <option value="delivery">Delivery (additional charge dependent on your location)</option>
         </select>
         <button type="submit" value="send">Submit</button>
       </form>
