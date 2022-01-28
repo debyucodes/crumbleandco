@@ -97,17 +97,17 @@
       <p>Before you submit an order request, please review our <a href="./menu.html">menu pricing</a>  and <a href="./about.html#faq">FAQ section</a>. Feel free to contact us <a href="./contact.html">here</a>  for any general inquiries!</p>
       <form action="https://formspree.io/f/myyozqyd" method="POST" onsubmit="this.submit(); this.reset(); return false;">
         <!-- name -->
-        <label for="" class="sr-only">Name</label>
-        <input name="name" type="text" required placeholder="First and Last Name*">
+        <label for="name" class="sr-only">Name</label>
+        <input name="name" id="name" type="text" required="" placeholder="First and Last Name*">
         <!-- email -->
-        <label for="" class="sr-only">Email</label>
-        <input name="_replyto" type="email" required placeholder="Email*">
+        <label for="email-add" class="sr-only">Email</label>
+        <input name="_replyto" type="email" id="email-add" required="" placeholder="Email*">
         <!-- phone -->
-        <label for="" class="sr-only">Phone</label>
-        <input name="phone" type="text" required placeholder="Phone number*" pattern="^\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$">
+        <label for="phone-num" class="sr-only">Phone</label>
+        <input name="phone" type="text" required="" id="phone-num" placeholder="Phone number*" pattern="^\(?\d{3}\)?-? *\d{3}-? *-?\d{4}$">
         <!-- food allergies -->
-        <label for="" class="sr-only">Food Allergies</label>
-        <input name="allergies" type="text" required placeholder="Any food allergies?*">
+        <label for="allergies" class="sr-only">Food Allergies</label>
+        <input name="allergies" type="text" required="" id="allergies" placeholder="Any food allergies?*">
         <!-- quantity -->
         <label for="quantity">Quantity</label>
         <select name="quantity" id="quantity">
@@ -119,17 +119,17 @@
           <option value="other">Other - please specify below.</option>
         </select>
         <!-- pick-up date -->
-        <label for="">Pick-up date</label>
-        <input type="date" name="date" required>
+        <label for="pickup-date">Pick-up date</label>
+        <input type="date" name="date" id="pickup-date" required="">
         <!-- details -->
         <textarea name="details" id="" cols="30" rows="10" placeholder="Please indicate any details about your order (e.g. wedding, birthday, theme, colour scheme, flavour)" required></textarea>
         <!-- pickup or delivery -->
         <label for="delivery-method">Delivery Method</label>
-        <select name="delivery-method" id="cars">
+        <select name="delivery-method" id="delivery-method">
           <option value="pickup">Pick-up</option>
           <option value="delivery">Delivery (additional charge dependent on your location)</option>
         </select>
-        <button type="submit" value="send">Submit</button>
+        <button type="submit" value="submit">Submit</button>
       </form>
     </section>
   </main>
