@@ -107,6 +107,12 @@ img {
 }
 
 // MEDIA QUERIES HERE
+@media (max-width: 1200px) {
+  .about li {
+    width: 30%;
+  }
+}
+
 @media (max-width: 800px) {
   .flavour {
     padding: 0;
@@ -124,8 +130,60 @@ img {
         width: 80%;
         margin-top: 10px;
       }
-  
     }
   }
   
+    .menu {
+      width: 90%;
+      padding: 50px;
+    }
+}
+
+// this is mobile view
+@media (max-width: 500px) {
+  .about ul,
+  .feature {
+    flex-direction: column;
+
+    li {
+      width: 70%;
+      margin: 20px auto;
+    }
+  }
+
+  .feature {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+
+    .FAQ {
+      width: 100%;
+    }
+  }
+
+  .order ul li {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .orderForm {
+    width: 90%;
+  }
+
+  .contactForm {
+    flex-direction: column;
+
+    div,
+    form {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
 }
