@@ -95,7 +95,8 @@
       <h1>Order Request Form</h1>
       <p>Looking to order custom cookies? Complete the form below to get a quote and we will be in touch within the next 24-48 hours!</p>
       <p>Before you submit an order request, please review our <a href="./menu.html">menu pricing</a>  and <a href="./about.html#faq">FAQ section</a>. Feel free to contact us <a href="./contact.html">here</a>  for any general inquiries!</p>
-      <form action="https://formspree.io/f/myyozqyd" method="POST" onsubmit="this.submit(); this.reset(); return false;">
+      <!-- <form action="https://formspree.io/f/myyozqyd" method="POST" onsubmit="this.submit(); this.reset(); return false;"> -->
+      <form action="https://formspree.io/f/myyozqyd" method="POST" onsubmit="this.submit(); return false;"></form>
         <!-- name -->
         <label for="name" class="sr-only">Name</label>
         <input name="name" id="name" type="text" required="" placeholder="First and Last Name*">
